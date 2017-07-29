@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-rm pkg/*.gem
-rake gem
-sudo gem uninstall cutedriver-qt-sut-plugin -a -x -I
-sudo gem install pkg/cutedriver*.gem --local --no-ri --no-rdoc
+rm *.gem
+gem build cutedriver-sut_qt.gemspec
+sudo gem uninstall cutedriver-sut-qt-plugin -a -x -I
+sudo gem install cutedriver-sut-qt* --local --no-ri --no-rdoc

@@ -1,5 +1,5 @@
 @echo off
 del /F /Q pkg\
-cmd /c "gem uninstall cutedriver-qt-sut-plugin"
-cmd /c "rake gem"
-cmd /c "gem install pkg\cutedriver*.gem --LOCAL --no-ri --no-rdoc"
+cmd /c "gem uninstall cutedriver-sut-qt-plugin"
+cmd /c "gem build cutedriver-sut_qt.gemspec"
+cmd /c "gem install cutedriver-sut* --LOCAL --no-ri --no-rdoc"
